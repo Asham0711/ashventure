@@ -77,10 +77,10 @@ const SignupForm = () => {
     const handleGoogleSignin = async () => {
         setIsGoogleLogin(true);
         await signIn("google", { callbackUrl: "/" });
-        toast({
-            title: 'Success',
-            description: 'User logged in successfully',
-        })
+        // toast({
+        //     title: 'Success',
+        //     description: 'User logged in successfully',
+        // })
     }
 
     return (
