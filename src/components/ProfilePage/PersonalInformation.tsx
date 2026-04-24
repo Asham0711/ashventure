@@ -23,6 +23,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import Loader from "../common/Loader"
+import ProfileSkeleton from "./ProfileLoader"
 
 interface UserProfile {
     firstName: string;
@@ -125,15 +126,12 @@ const PersonalInformation = () => {
             setIsEditing(false);
         }
     }
+    if (loading || !user) {
+        return <ProfileSkeleton />;
+    }
   
     return (
         <div className="space-y-4 relative">
-            {loading && (
-                <Loader
-                    text="Loading your profile...."
-                    fullPage={false}
-                />
-            )}
             <p className="md:text-3xl text-2xl">Personal Information</p>
             <div className="border border-white/20 flex justify-start items-center gap-3 bg-black/30 rounded-3xl py-3 px-4">
                 <div>
