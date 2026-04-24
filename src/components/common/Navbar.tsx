@@ -27,11 +27,18 @@ const Navbar = () => {
     const profileMenuRef = useRef<HTMLUListElement | null>(null);
 
 
+
     /* --------- Path Variables ---------- */
     const pathname = usePathname();
 
     const { data: session } = useSession();
     const router = useRouter();
+
+    useEffect(() => {
+        if (session && !session.user) {
+            signOut();
+        }
+    }, [session]);
 
      /* --------- Use Effect hook ---------- */
     useEffect(() => {

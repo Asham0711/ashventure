@@ -6,6 +6,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useToast } from "@/hooks/use-toast";
 import { useRouter } from "next/navigation";
+import { signOut } from "next-auth/react";
 
 const DeleteAccount = () => {
     const [isDelete, setIsDelete] = useState(false);
@@ -31,8 +32,7 @@ const DeleteAccount = () => {
                 description: response.data.message,
             });
 
-            router.push("/sign-in");
-            router.refresh();
+            await signOut({ callbackUrl: "/sign-in" });
         } catch (error : any) {
             toast({
                 title: "Error",
