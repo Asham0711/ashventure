@@ -1,14 +1,14 @@
-import ResetPasswordForm from "@/components/Auth/ResetPasswordForm"
-import { Suspense } from "react"
+import ResetPasswordForm from "@/components/Auth/ResetPasswordForm";
+import { Suspense } from "react";
 
 const ResetPasswordPage = () => {
-    return (
-        <div className="max-w-screen min-h-screen container mx-auto overflow-x-hidden w-full h-full flex justify-center items-center flex-col gap-4">
-            <Suspense fallback={<div>Loading...</div>}>
-                <ResetPasswordForm/>
-            </Suspense>
-        </div>
-    )
-}
+  return (
+    <div className="max-w-screen min-h-screen  mx-auto overflow-x-hidden w-full h-full flex justify-center items-center flex-col gap-4">
+      <Suspense fallback={<div>Loading...</div>}>
+        <ResetPasswordForm />
+      </Suspense>
+    </div>
+  );
+};
 
-export default ResetPasswordPage
+export default ResetPasswordPage;

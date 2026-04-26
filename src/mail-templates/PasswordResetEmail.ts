@@ -69,7 +69,7 @@ export const passwordResetTemplate = ({ link }: PasswordResetTemplateProps): str
     
     <body>
         <div class="container">
-            <img class="logo" src="https://i.postimg.cc/CLZK2XZy/health-risk-4-removebg-preview-1.png" alt="Ashventure">
+            <img src="https://i.ibb.co/LXsNnfVG/logo-full.png" alt="Ashventure" width="150" style="display:block; margin:0 auto 20px auto; max-width:150px; height:auto;" >
             <div class="message">Password Reset Request</div>
             <div class="body">
                 <p>Dear User,</p>
