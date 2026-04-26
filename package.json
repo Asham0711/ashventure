@@ -18,7 +18,7 @@
     "@radix-ui/react-select": "^2.2.6",
     "@radix-ui/react-toast": "^1.2.15",
     "@react-pdf/renderer": "^4.3.2",
-    "axios": "^1.13.2",
+    "axios": "^1.15.2",
     "bcrypt": "^6.0.0",
     "bcryptjs": "^3.0.3",
     "class-variance-authority": "^0.7.1",
@@ -29,21 +29,23 @@
     "groq-sdk": "^0.37.0",
     "input-otp": "^1.4.2",
     "leaflet": "^1.9.4",
+    "lodash": "^4.18.1",
     "lucide-react": "^0.555.0",
     "mongodb": "^7.0.0",
     "mongoose": "^9.0.2",
     "motion": "^12.23.25",
-    "next": "^16.1.6",
-    "next-auth": "^4.24.13",
-    "nodemailer": "^7.0.11",
+    "next": "^16.2.4",
+    "next-auth": "^4.24.14",
+    "nodemailer": "^7.0.13",
     "otp-generator": "^4.0.1",
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
     "react-hook-form": "^7.68.0",
     "react-icons": "^5.5.0",
     "react-toast": "^1.0.3",
     "tailwind-merge": "^3.4.0",
     "tailwindcss-animate": "^1.0.7",
+    "uuid": "^14.0.0",
     "zod": "^4.1.13"
   },
   "devDependencies": {
@@ -60,5 +62,9 @@
     "eslint-config-next": "16.0.5",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "postcss": "8.5.10",
+    "uuid": "^14.0.0"
   }
 }
